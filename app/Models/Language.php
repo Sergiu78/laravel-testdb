@@ -11,8 +11,5 @@ class Language extends Model
 
     protected $fillable = ['typelang'];
 
-    public function items()
-    {
-        return $this->hasMany(Item::class);
-    }
+    
 }

@@ -20,7 +20,6 @@ class CreateItemsTable extends Migration
             $table->string('shortdescr');
             $table->integer('price')->unsigned()->nullable();
             $table->string('longdescr');
-            $table->integer('languages_id')->unsigned()->nullable();
             $table->timestamps();
         });
     }

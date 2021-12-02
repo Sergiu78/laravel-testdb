@@ -19,7 +19,7 @@ class ItemFactory extends Factory
             'shortdescr' => $this->faker->sentence,
             'price' => rand(1, 1000),
             'longdescr' => $this->faker->text,
-            'languages_id' => 1,
+            
         ];
     }
 }

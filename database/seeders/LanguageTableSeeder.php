@@ -14,6 +14,6 @@ class LanguageTableSeeder extends Seeder
      */
     public function run()
     {
-        Language::factory()->count(10)->create();
+        Language::factory()->count(3)->create();
     }
 }

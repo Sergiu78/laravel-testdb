@@ -18,3 +18,8 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', 'ItemController@index')->name('item.index');
+Route::get('/create', 'ItemController@create')->name('item.create');
+Route::post('/', 'ItemController@store')->name('item.store');
+Route::get('/{id}/edit', 'ItemController@edit')->name('item.edit');
+Route::put('/update/{id}', 'ItemController@update')->name('item.update');
+Route::delete('/delete/{id}', 'ItemController@destroy')->name('item.destroy');
